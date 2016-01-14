@@ -1,0 +1,4 @@
+# remember source me, don't run me
+export GOPATH=$HOME/repos/go-lib
+export GOBIN=$HOME/repos/go-lib/bin
+export PATH=$HOME/repos/go-lib/bin:$PATH
