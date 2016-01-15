@@ -9,10 +9,11 @@ import (
 )
 
 func Exit(message string, clear bool) {
-	if clear == true{
-		fmt.Println(c.CL + c.B1+message)
+	if clear == true {
+		fmt.Println(c.CL + c.B1 + message)
 	} else {
-		fmt.Println(c.B1+message)
+		fmt.Println(c.B1 + message)
+	}
 	os.Exit(-1)
 }
 
@@ -20,7 +21,7 @@ func Spacer(times int) {
 	repeat := 0
 	for repeat < times {
 		fmt.Println()
-		repeat += 1
+		repeat++
 	}
 }
 
@@ -64,19 +65,13 @@ func QuitAtError(problem error) {
 
 }
 
-
 func RandomInt(low int, high int) int {
-	if low >= high || low < 0 || high < 0{
-		fmt.Println(c.B01 + "Sorry, please declare two integers both greater than 0 where the second number is larger than the first number."+c.X)
+	if low >= high || low < 0 || high < 0 {
+		fmt.Println(c.B01 + "Sorry, please declare two integers both greater than 0 where the second number is larger than the first number." + c.X)
 		Exit("Program stopped", false)
 	}
 	n := high - low
 	unprocessedRandInt := m.Intn(n)
-	randInt := unprocessedRandInt+low
+	randInt := unprocessedRandInt + low
 	return randInt
 }
-
-
-
-
-
