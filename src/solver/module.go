@@ -1,11 +1,11 @@
 package nil
 
 import (
+	i "../input"
+	s "../other"
 	"fmt"
 	c "github.com/skilstak/go/colors"
 	ymxb "solver/lib/ymxb"
-	i "src/input"
-	s "src/other"
 )
 
 //////////////////////////////////////////////////
