@@ -16,15 +16,12 @@ A calculator that can do assorted math functions that I am too lazy to
 do each time for math homework. If you want to use it, copy and paste
 this into a main.go and run it:
 
-  package main
-  
-  import m "github.com/whitman-colm/go-lib/src/solver"
+    package main
+    import m "github.com/whitman-colm/go-lib/src/solver"
 
-  func main() {
-    
-    m.Start()
-  
-  }
+    func main() {
+      m.Start()
+    }
 
 #End (for now)
 
