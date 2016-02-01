@@ -16,13 +16,29 @@ import (
 func Startup() {
 	//the only function in this
 	isDone := false
+	doWhatNow := ""
 	for isDone == false {
 		//So that you don't have to restart the program each time
-		fmt.Println(c.CL + c.B00 + "Mathmatic solver program thing.")
-		s.Spacer(2)
-		//Adds two lines
-		fmt.Println(c.B1 + "What are you too lazy to do today?")
-		fmt.Println(c.Y + "Select one of the letters in red")
-		s.Spacer(1)
+		switch doWhatNow {
+		case "a":
+			//call a thing
+		case "b":
+			//call another thing
+		case "c":
+			isDone := true
+		default:
+			//forces a responce
+			fmt.Println(c.CL + c.B00 + "Mathmatic solver program thing.")
+			s.Spacer(2)
+			//Adds two lines
+			fmt.Println(c.B1 + "What are you too lazy to do today?")
+			fmt.Println(c.Y + "Select one of the letters in red")
+			s.Spacer(1)
+			fmt.Println(c.R + "{A}" + c.B0 + "Find a linear slope equation")
+			fmt.Println(c.R + "{B}" + c.B0 + "Find the hypotonuse of a right triangle")
+			fmt.Println(c.R + "{C}" + c.B0 + "Nothing go away")
+			s.Spacer(1)
+			doWhatNow := StringInput(c.M + ">>>" + c.B)
+		}
 	}
 }
