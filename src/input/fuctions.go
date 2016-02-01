@@ -25,7 +25,7 @@ func StringInput(p string) string {
 	//This function just returns whatever is typed as a string.
 	fmt.Print(c.X + p)
 	reader := bufio.NewReader(os.Stdin)
-	t, err = reader.ReadString('\n')
+	t, err := reader.ReadString('\n')
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(-1)
@@ -39,7 +39,7 @@ func IntInput(p string) int {
 	//This function just returns whatever is typed as a string.
 	fmt.Print(c.X + p)
 	reader := bufio.NewReader(os.Stdin)
-	t, err = reader.ReadString('\n')
+	t, err := reader.ReadString('\n')
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(-1)
@@ -53,11 +53,11 @@ func IntInput(p string) int {
 	return i
 }
 
-func DoubleInput(p string) Int {
+func DoubleInput(p string) float64 {
 	//This function just returns whatever is typed as a string.
 	fmt.Print(c.X + p)
 	reader := bufio.NewReader(os.Stdin)
-	t, err = reader.ReadString('\n')
+	t, err := reader.ReadString('\n')
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(-1)

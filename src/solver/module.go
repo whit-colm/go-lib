@@ -3,9 +3,9 @@ package nil
 import (
 	"fmt"
 	c "github.com/skilstak/go/colors"
-	i "input"
-	s "other"
-	"strings"
+	ymxb "solver/lib/ymxb"
+	i "src/input"
+	s "src/other"
 )
 
 //////////////////////////////////////////////////
@@ -13,7 +13,7 @@ import (
 //The real programming code is in another castle//
 //////////////////////////////////////////////////
 
-func Startup() {
+func Start() {
 	//the only function in this
 	isDone := false
 	doWhatNow := ""
@@ -21,7 +21,7 @@ func Startup() {
 		//So that you don't have to restart the program each time
 		switch doWhatNow {
 		case "a":
-			//call a thing
+			ymxb.Function()
 		case "b":
 			//call another thing
 		case "c":
@@ -38,7 +38,7 @@ func Startup() {
 			fmt.Println(c.R + "{B}" + c.B0 + "Find the hypotonuse of a right triangle")
 			fmt.Println(c.R + "{C}" + c.B0 + "Nothing go away")
 			s.Spacer(1)
-			doWhatNow := StringInput(c.M + ">>>" + c.B)
+			doWhatNow := i.StringInput(c.M + ">>>" + c.B)
 		}
 	}
 }
