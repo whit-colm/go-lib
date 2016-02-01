@@ -6,6 +6,6 @@ import (
 )
 
 func Func() {
-	path := exec.Command(pwd)
+	path := exec.Command("pwd")
 	fmt.Println(path)
 }
