@@ -57,7 +57,7 @@ func QuitAtError(problem error) {
 		fmt.Println(errorResponse[m.Intn(9)])
 		fmt.Println()
 		fmt.Println(c.V + "Details of the error are below:" + c.B00)
-		fmt.Println(c.B01+problem+c.B00)
+		fmt.Printf("%s%v%s",c.B01,problem,c.B00)
 		os.Exit(1)
 	} else {
 		fmt.Println(c.V + "ERROR CHECK: " + c.B00 + "no errors found")
