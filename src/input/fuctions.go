@@ -3,7 +3,7 @@ package input
 import (
 	"bufio"
 	"fmt"
-	c "github.com/skilstak/go/colors"
+	c "github.com/skilstak/go-colors"
 	"os"
 	"strconv"
 	"strings"
